@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="shortcut icon" href="./public/logo/244px-Q00.svg.png">
+
+    <!--Css para buscador de cabecera-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> Solo Queen </title>
+</head>
+
+<body>
+    <header>
+        <!--Cabecera-->
+        <nav class="navbar navbar-expand-lg bg-transparent" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><img src="./public/logo/244px-Q00.svg.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./src/pages/Historia.html">Historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="./src/pages/Integrantes.html">Integrantes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./src/pages/Albumes.html">Albumes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./src/pages/Contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Redes Sociales
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item"
+                                        href="https://www.instagram.com/officialqueenmusic/?hl=es"><img
+                                            src="../../public/logo/insta.png" alt="Logo de Instagram"
+                                            target="_blank"></a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item" href="https://twitter.com/QueenWillRock"><img
+                                            src="../../public/logo/tweeter.png" alt="Logo de Tweeter"></a> </li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item"
+                                        href="https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d?si=VJ7vGLlXSGmhFVfOTgfpvw"><img
+                                            src="../../public/logo/spoty.png" alt="Logo de Spotify"></a> </li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item" href="https://www.facebook.com/Queen/?locale=es_LA"><img
+                                            src="../../public/logo/face.png " alt="Logo de Facebook"></a> </li>
+
+
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="..." aria-label="Search">
+                        <button class="btn btn-outline-warning" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+
+
+        <!------------------------------------Logo Principal-------------------------------------->
+        <section class="logoprinc row d-flex justify-content-center">
+
+
+            <img id="Logoindex" src="./public/logo/logo-queen.jpg" alt="Logo de Queen en centro de pantalla">
+
+        </section>
+
+
+        <!------------------------------Slider con menu de 3 opciones---------------------------------------------->
+        <section id="carouselExampleCaptions" class="carousel slide row">
+
+            <div class="col-12">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <img src="./public/images/slider1.jpg" class="d-block w-100" alt="Slider 1">
+
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./public/images/slider2.jpg" class="d-block w-100" alt="Slider 2">
+
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./public/images/slider3.jpg" class="d-block w-100" alt="Slider 3">
+
+
+
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+
+        <!--------------------------------- Novedades ---------------------------------------------->
+
+
+        <section class="novedades-i container-fluid ">
+
+            <div class="novei row justify-content-center">
+                <img src="./public/images/1681921_e6c13.png" alt="">
+            </div>
+
+            <div class="row justify-content-center">
+                <form class="d-flex justify-content-center">
+                    <div class="botonemail">
+                        <input type="email" placeholder="Coloca tu E-Mail">
+                    </div>
+                </form>
+                <button class="suscribete">SUSCRIBETE</button>
+            </div>
+
+
+
+        </section>
+
+    </main>
+    <footer>
+        <div class="container d-flex justify-content-center">
+            <div class="row">
+                <div class="col-xl-12 col-xs-4">
+                    <h4>Copyright 2023, Todos los derechos reservados <a
+                            href="https://www.queenonline.com/politica_de_privacidad">Politica de Privacidad</a></h4>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,615 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+body{
+    background-color: rgb(0, 0, 0);
+    
+    font-family: 'Inter', sans-serif;
+    color: #FFF8D3;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap');
+
+header{
+    background-color:rgba(217, 217, 217, 0.205);
+}
+
+.navbar-toggler{
+    border: none !important;
+}
+/*********************************** MENU ****************************************/
+
+.navbar .navbar-nav .nav-item .nav-link{
+    color: #e7d266;
+}
+.navbar .container-fluid .navbar-brand img{
+height: 30px;
+width: 30px;
+}
+
+
+/*nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    background-color: rgb(217, 217, 217, 20%);
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    
+}
+
+nav ul li{   
+    margin: 0 5px;
+    justify-content: space-evenly;
+    .menu li a:hover{
+        color: rgb(148, 150, 62);
+    }
+    nav .busca{
+        display: flex;
+        align-items: center;
+        margin: 0 15px;
+        
+    }
+    
+    nav .menu{
+        margin: 0 15px;
+    }
+    nav .redes{
+        margin: 0 15px;
+    }
+    
+    */
+   
+
+/**************************************** PIE **********************************************/
+footer{
+    display: flex;
+    background-color:rgb(217, 217, 217 , 20%);
+    height: 100px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+h4 {
+    font-size: small;
+    color: white;
+    font-weight: lighter;
+}
+h4 a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/***************************************** INICIO ******************************************/
+.logoprinc img{
+    height: 500px;
+    width: 700px;
+}
+
+
+
+/***************************************** Novedades ***************************************/
+.novedades-i{
+    
+    margin-top: 20px;
+    height: 500px;
+    
+    background-color: rgb(217, 217, 217, 10%);
+    background-image: url(../public/images/7974.png);
+    background-size: 200px 200px;
+    }  
+    .novei{
+
+        height: 370px;
+    }
+    .novei img{
+        margin-top: 120px;
+        width: 350px;
+        height: 250px;
+    }
+    
+    .botonemail{
+        
+        
+        
+        border: #e7d266;
+        border-style: solid;
+        border-radius: 15px;
+    
+    }
+    .botonemail input{
+        
+        width: 601px;
+        height: 30px;       
+        border-radius: 15px;
+        text-align: center;
+        font-size: large;
+        font-weight: bold;
+        
+    }
+    .suscribete{       
+        width: 200px;
+        height: 35px;
+        background-color: #000000;
+        color: white;
+        border-radius: 15px;
+        border-color: #e7d266;
+        border-width: 4px;
+        border-style: solid;
+        font-size: large;
+        font-weight: bold;
+    }
+    .boton-suscri button{
+        width: 80px;
+    }
+    
+    @media screen and (max-width: 576px){
+        .logoprinc img{
+            height: 50%;
+            width: 50%;
+        }
+        .novei{
+            height: 50%;
+        }
+        .novedades-i{
+            width: 100%;
+            height: 50%;
+        }
+        .botonemail input{
+            width: 100%;
+            
+        }
+        
+        .suscribete{
+            width: 30%;
+            font-weight: lighter;
+        }
+        .novei img{
+            width: 50%;
+            height: 50%;
+        }
+
+    }
+/******************************** Historia *********************************/
+
+.fondohistoria{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    background-image: url(../public/images/7974.png);
+    height: 100%;
+    width: 100%;
+
+}
+
+.fondohistoria img{
+    margin: 20px 0;
+    border-radius: 10px;
+    border-color: #e7d266;
+    width: 600px;
+    height: 400px;
+    border-width: 5px;
+    border-style: solid;
+}
+
+.historiaart{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 250px;
+    margin: 20px 0;
+    overflow-y: scroll;
+}
+
+.historiaart h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+/**************************************** INTEGRANTES ******************************************/
+
+.intemain{
+    margin-top: 50px;
+}
+.intemain h1{
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+
+.integrantes div{
+    margin: 10px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #e7d266;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px; 
+    height: 200px;
+    
+
+}
+.integrantes div a img{
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px; 
+    width: 100%;
+    height: 100%;
+}
+
+/******************************************/
+
+@media screen and (max-width: 576px){
+    
+    .intemain h1{
+        text-align: center;
+        font-size: 30px;
+    }
+
+
+    .datos article p{
+        font-size: x-small;
+    }
+    .datos .datos2{
+        height: 300px;
+        width: 100%;
+    }
+    .datos .datos2 .foto{
+        height: 100%;
+        width: 25%;
+        margin: 1px;
+    }
+    
+    .datos article{
+        margin: 5px;
+        height: 90%;
+        overflow-y: scroll;
+        
+        
+    }
+}
+
+.datos2{
+    margin: 30px;   
+    padding: 5px 5px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #e7d266;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px; 
+}
+.foto{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e7d266;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px; 
+    float: left;
+    margin: 5px;
+    width: 200px;
+    height: 580px;
+    
+}
+.foto img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/**********************/
+#freddie1 article{
+    margin: 10px;
+    
+    text-align: center;
+    color: white;
+    overflow-y: scroll;
+    
+}
+
+
+/******************************************/
+
+
+#roger1 article{
+    margin: 10px;
+    
+    text-align: center;
+    color: white;
+    overflow-y: scroll;
+    
+}
+
+/******************************************/
+
+
+#brian1 article{
+    margin: 10px;
+    
+    text-align: center;
+    color: white;
+    overflow-y: scroll;
+    
+}
+
+/******************************************/
+
+
+#john1 article{
+    margin: 10px;
+    
+    text-align: center;
+    color: white;
+    overflow-y: scroll;
+    
+}
+
+/******************************************* PAGINA DE ALBUMES ******************************************/
+
+.albumes{
+    position: relative;
+        background-image: url(../public/images/7974.png);
+        background-size: 100px 100px;
+        background-repeat: repeat;
+        width: 1500px;
+        height: 300px;
+        overflow-y: scroll;
+    }
+    .albumes div{
+        
+        margin: 25px;
+        display: inline-block;
+        width: 250px;
+        height: 250px;
+        border-style: solid;
+        border-width: 6px;
+        border-color: rgb(148, 150, 62);
+        
+    
+    }
+    
+    
+    
+    .albumes div img{
+        width: 250px;
+        height: 250px;
+    }
+    
+    hr{
+        height: 5px;
+        background-color: #676821;
+    }
+     
+    /*************************************************************************************************/
+    
+    #inuendo{
+        position: relative;
+        margin-top: 20px;
+        margin-left: 200px;
+        border-style: solid;
+        border-width: 4px;
+        border-color: #676821;
+    width: 1000px;
+    height: 600px;
+    }
+    
+    #inuendo aside{
+        width: 260px;
+    height: 5px;
+    
+    }
+    #inuendo aside img{
+        width: 250px;
+        height: 200px;
+        display: block;
+        margin: 10px;
+    }
+    #inuendo aside iframe{
+        width: 250px;
+        margin: 10px;
+    }
+    
+    #inuendo article{
+        border: #676821;
+        border-style: solid;
+        border-width: 3px;
+        float: right;    
+        height: 565px;
+        width: 700px;
+        overflow-y: scroll;
+        margin-top: 0px;
+        margin-right: 15px;
+        
+        
+    }
+    #inuendo article h1{
+        font-size: 50px;
+        color: #676821;
+        text-align: center;
+    }
+    
+    /****/
+    
+    #opera{
+        position: relative;
+        margin-top: 20px;
+        margin-left: 200px;
+        border-style: solid;
+        border-width: 4px;
+        border-color: #676821;
+    width: 1000px;
+    height: 600px;
+    }
+    
+    #opera aside{
+        width: 260px;
+    height: 5px;
+    
+    }
+    #opera aside img{
+        width: 250px;
+        height: 200px;
+        display: block;
+        margin: 10px;
+    }
+    #opera aside iframe{
+        width: 250px;
+        margin: 10px;
+    }
+    
+    #opera article{
+        border: #676821;
+        border-style: solid;
+        border-width: 3px;
+        float: right;    
+        height: 565px;
+        width: 700px;
+        overflow-y: scroll;
+        margin-top: 0px;
+        margin-right: 15px;
+        
+        
+    }
+    #opera article h1{
+        font-size: 50px;
+        color: #676821;
+        text-align: center;
+    }
+    
+    /*********/
+    
+    #kind{
+        position: relative;
+        margin-top: 20px;
+        margin-left: 200px;
+        border-style: solid;
+        border-width: 4px;
+        border-color: #676821;
+    width: 1000px;
+    height: 600px;
+    }
+    
+    #kind aside{
+        width: 260px;
+    height: 5px;
+    
+    }
+    #kind aside img{
+        width: 250px;
+        height: 200px;
+        display: block;
+        margin: 10px;
+    }
+    #kind aside iframe{
+        width: 250px;
+        margin: 10px;
+    }
+    
+    #kind article{
+        border: #676821;
+        border-style: solid;
+        border-width: 3px;
+        float: right;    
+        height: 565px;
+        width: 700px;
+        overflow-y: scroll;
+        margin-top: 0px;
+        margin-right: 15px;
+        
+        
+    }
+    #kind article h1{
+        font-size: 50px;
+        color: #676821;
+        text-align: center;
+    }
+    
+    p{
+        text-align: left;
+        margin: 40px;
+    }
+
+    /* //////////////////////Pag Contacto ////////////////////////////// */
+/*.imgcontac{
+    width: 100%;
+    height: 100%;
+    
+    
+    
+}*/
+.imgcontac img{
+    width: 250px;
+    height: 200px;
+    
+}
+.imgcontac{
+    padding-top: 20% 0;
+}
+/*
+.contactanos{
+    float: right;
+    margin-right: 400px;
+    margin-top: 60px;
+
+}
+/*
+.contactanos fieldset{
+    border-style: solid;
+    border-width: 5px;
+    border-color: #e7d266;
+    
+} */
+.formulario{
+    margin-top: 30%;
+    
+}
+.contactanos div {
+   margin: 5px;
+
+}
+
+.contactanos div input{
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.contactanos div textarea{
+    width: 290px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+select{
+    width: 150px;
+    border-radius: 15px;
+    height: 30px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255);
+}
+
+.botonform{
+    height: 40px;
+    width: 150px;
+    margin-left: 65px;
+    border-radius: 15px;
+}

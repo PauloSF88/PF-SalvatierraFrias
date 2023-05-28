@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <link rel="shortcut icon" href="../../public/logo/244px-Q00.svg.png">
+
+    <!--Css para buscador de cabecera-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> Solo Queen </title>
+</head>
+
+<body>
+    <header>
+        <!--Cabecera-->
+        <nav class="navbar navbar-expand-lg bg-transparent" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../../index.html"><img src="../../public/logo/244px-Q00.svg.png"
+                        alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./Historia.html">Historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./Integrantes.html">Integrantes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Albumes.html">Albumes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Redes Sociales
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item"
+                                        href="https://www.instagram.com/officialqueenmusic/?hl=es"><img
+                                            src="../../public/logo/insta.png" alt="Logo de Instagram"
+                                            target="_blank"></a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item" href="https://twitter.com/QueenWillRock"><img
+                                            src="../../public/logo/tweeter.png" alt="Logo de Tweeter"></a> </li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item"
+                                        href="https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d?si=VJ7vGLlXSGmhFVfOTgfpvw"><img
+                                            src="../../public/logo/spoty.png" alt="Logo de Spotify"></a> </li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item" href="https://www.facebook.com/Queen/?locale=es_LA"><img
+                                            src="../../public/logo/face.png " alt="Logo de Facebook"></a> </li>
+
+
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="..." aria-label="Search">
+                        <button class="btn btn-outline-warning" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+<!-- cometario para git-->
+    <main>
+        <section class="container-fluid">
+            <div class="row">
+                <div class="imgcontac col-sm-12 col-xl-6 d-flex justify-content-center">
+                    <!--Logo Principal pequeno -->
+                    <img src="../../public/logo/logo-queen.jpg" alt="Logo de Queen en costado izquierdo de pantalla">
+                </div>
+
+                <!--Formulario de contacto-->
+                <div class=" col-sm-12 col-xl-6 d-flex justify-content-center">
+                    <aside class="contactanos">
+                        <!--<fieldset>
+        <legend>Contactanos</legend> -->
+                        <form class="formulario" action="" method="get" enctype="application/x-www-form-urlencoded">
+
+
+                            <div>
+                                <label for="Pais">
+                                    Pais:
+                                </label>
+                                <select name="Pais:">
+                                    <option value="A">Argentina</option>
+                                    <option value="E">Estados Unidos</option>
+                                    <option value="I">Inglaterra</option>
+                                </select>
+                            </div>
+
+
+                            <div>
+                                <input type="text" name="Nombre y Apellido" placeholder="Nombre y Apellido">
+                            </div>
+
+
+                            <div>
+                                <input type="email" name="E-Mail" placeholder="E-Mail">
+                            </div>
+
+
+                            <div>
+                                <textarea name="Mensaje" id="" cols="30" rows="10" placeholder="Mensaje..."></textarea>
+                            </div>
+
+
+                            <div>Recibir Novedades</div>
+                            <label for="si">
+                                Si
+                            </label>
+                            <input id="si" type="radio" name="novedades" value="si">
+                            <label for="no">
+                                No
+                            </label>
+                            <input id="no" type="radio" name="novedades" value="nocturno">
+
+
+                            <div>
+                                <button class="botonform" type="submit">Enviar</button>
+                            </div>
+                        </form>
+
+
+
+
+
+                        <!--/fieldset>-->
+
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+        <h4>Copyright 2023, Todos los derechos reservados <a
+                href="https://www.queenonline.com/politica_de_privacidad">Politica de Privacidad</a></h4>
+
+    </footer>
+</body>
+
+</html>
