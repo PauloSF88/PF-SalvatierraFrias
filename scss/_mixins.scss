@@ -1,0 +1,8 @@
+@mixin bordes( $radio, $color, $ancho, $estilo )
+{
+border-radius: $radio;
+border-color: $color;
+border-width: $ancho;
+border-style: $estilo;
+
+}
