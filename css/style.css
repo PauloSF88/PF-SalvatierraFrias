@@ -18,6 +18,28 @@ header {
 .navbar-toggler {
   border: none !important;
 }
+/************************************* SCROLLBAR *******************************/
+body::-webkit-scrollbar{
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+      border-radius: 5px;
+      background:  #e7d266;
+}
+body::-webkit-scrollbar-thumb:hover{
+  background: #e7e984;
+}
+
+article::-webkit-scrollbar{
+  width: 10px;
+}
+article::-webkit-scrollbar-thumb{
+      border-radius: 5px;
+      background:  #e7d266;
+}
+article::-webkit-scrollbar-thumb:hover{
+  background: #e7e984;
+}
 
 /*********************************** MENU ****************************************/
 .navbar .navbar-nav .nav-item .nav-link {
@@ -51,9 +73,16 @@ footer h4 a {
 }
 
 /***************************************** INICIO ******************************************/
-.logoprinc img {
+.logoprinc{
+  height: 500px;
+  width: 100%;
+}
+.logoprinc img{
   height: 500px;
   width: 700px;
+}
+#carouselExampleCaptions{
+  width: 100%;
 }
 
 /***************************************** Novedades ***************************************/
@@ -86,6 +115,7 @@ footer h4 a {
   font-weight: bold;
 }
 .novedades-i .suscribete {
+  margin-top: 20px;
   width: 200px;
   height: 35px;
   background-color: #000000;
@@ -160,36 +190,40 @@ footer h4 a {
   }
 }
 /**************************************** INTEGRANTES ******************************************/
-.intemain {
+.intemain{
   margin-top: 50px;
 }
-.intemain h1 {
+.intemain h1{
   text-align: center;
   margin: 20px 0;
 }
 
-.integrantes div {
+.integrantes{
+width: 100%;
+}
+
+
+.integrantes div{
   margin: 10px;
   border-style: solid;
   border-width: 4px;
   border-color: #e7d266;
-  border-radius: 0;
-  border-color: #e7d266;
-  border-width: 4px;
-  border-style: solid;
   border-top-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-bottom-right-radius: 15px; 
   height: 200px;
+  
+
 }
-.integrantes div a img {
+.integrantes div a img{
   border-top-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  width: 100%;
-  height: 100%;
+  border-bottom-right-radius: 20px; 
+  margin: 30px;
+  width: 80%;
+  height: 70%;
 }
 
 /******************************************/
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 575px) {
   .intemain h1 {
     text-align: center;
     font-size: 30px;
@@ -228,9 +262,9 @@ footer h4 a {
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
   float: left;
-  margin: 5px;
+  margin: 5% 15px;
   width: 200px;
-  height: 580px;
+  height: 300px;
 }
 .datos2 .foto img {
   width: 100%;
@@ -241,27 +275,107 @@ footer h4 a {
 
 /**********************/
 #freddie1 article, #roger1 article, #brian1 article, #john1 article {
-  margin: 10px;
-  text-align: center;
-  color: white;
-  overflow-y: scroll;
+    margin: 10px;
+    height: 400px;
+    text-align: center;
+    color: white;
+    overflow-y: scroll;
+    padding: 15px;
 }
 
 /******************************************
 
 /******************************************* PAGINA DE ALBUMES ******************************************/
+@media screen and (max-width: 575px) {
+  .albumes {
+    position: relative;
+    background-image: url(../public/images/7974.png);
+    background-size: 100px 100px;
+    background-repeat: repeat;
+    width: 100%;
+    display: inline-block;
+    padding-left: 10%;
+    
+  }
+  .albumes div {
+    margin: 25px 50px;
+    
+    
+    width: 100%;
+    height: 600px;
+    border-style: solid;
+    border-width: 6px;
+    border-color: rgb(148, 150, 62);
+  }
+  .albumes div img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  hr {
+    height: 5px;
+    background-color: #676821;
+  }
+  
+  
+  #inuendo, #opera, #kind {
+    display: inline-block;
+  }
+  #inuendo article, #opera article, #kind article {
+    border: #676821;
+    border-style: solid;
+    border-width: 3px;
+    float: right;
+    height: 565px;
+    width: 700px;
+    overflow-y: scroll;
+    margin-top: 0px;
+    margin-right: 15px;
+  }
+  #inuendo article h2, #opera article h2, #kind article h2 {
+    font-size: 50px;
+    color: #676821;
+    text-align: center;
+  }
+  #inuendo article p, #opera article p, #kind article p{
+    padding: 30px;
+  }
+  #inuendo article iframe, #opera article iframe, #kind article iframe{
+    margin: 5px 50px;
+    
+  }
+  #inuendo aside, #opera aside, #kind aside {
+    width: 260px;
+    height: 5px;
+  }
+  #inuendo aside img, #opera aside img, #kind aside img {
+    width: 250px;
+    height: 200px;
+    display: block;
+    margin: 10px;
+  }
+  #inuendo aside iframe, #opera aside iframe, #kind aside iframe {
+    width: 250px;
+    margin: 10px;
+  }
+  
+}
+
+/*************************************************************************/
 .albumes {
   position: relative;
   background-image: url(../public/images/7974.png);
   background-size: 100px 100px;
   background-repeat: repeat;
-  width: 1500px;
-  height: 300px;
-  overflow-y: scroll;
+  width: 100%;
+  
+  padding-left: 10%;
+  
 }
 .albumes div {
-  margin: 25px;
+  margin: 25px 50px;
   display: inline-block;
+  
   width: 250px;
   height: 250px;
   border-style: solid;
@@ -269,8 +383,8 @@ footer h4 a {
   border-color: rgb(148, 150, 62);
 }
 .albumes div img {
-  width: 250px;
-  height: 250px;
+  width: 100%;
+  height: 100%;
 }
 
 hr {
@@ -300,10 +414,17 @@ hr {
   margin-top: 0px;
   margin-right: 15px;
 }
-#inuendo article h1, #opera article h1, #kind article h1 {
+#inuendo article h2, #opera article h2, #kind article h2 {
   font-size: 50px;
   color: #676821;
   text-align: center;
+}
+#inuendo article p, #opera article p, #kind article p{
+  padding: 30px;
+}
+#inuendo article iframe, #opera article iframe, #kind article iframe{
+  margin: 5px 50px;
+  
 }
 #inuendo aside, #opera aside, #kind aside {
   width: 260px;
@@ -322,11 +443,11 @@ hr {
 
 /* //////////////////////Pag Contacto ////////////////////////////// */
 .imgcontac {
-  padding-top: 20% 0;
+  align-items: center;
 }
 .imgcontac img {
-  width: 250px;
-  height: 200px;
+  width: 350px;
+        height: 300px;
 }
 
 .formulario {
@@ -352,21 +473,30 @@ hr {
   font-weight: bold;
   border-radius: 15px;
 }
-.contactanos div input select {
+.contactanos div .botonform {
   width: 150px;
   border-radius: 15px;
   height: 30px;
   text-align: center;
   font-size: 15px;
   font-weight: bold;
-  background-color: rgb(255, 255, 255);
-}
-
-.botonform {
-  height: 40px;
-  width: 150px;
+  background-color: rgb(204, 212, 129);
   margin-left: 65px;
-  border-radius: 15px;
+  
 }
-
-/*# sourceMappingURL=style.css.map */
+.contactanos div .botonform:hover {
+  
+  background-color: rgba(84, 88, 39, 0.849);
+  
+  
+}
+.contactanos div select{
+  width: 150px;
+  border-radius: 15px;
+  height: 30px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  
+  
+}

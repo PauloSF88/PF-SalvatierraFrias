@@ -3,10 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 @import 'font';
 @import 'variables';
 @import 'maps';
 @import 'mixins';
+
 body {
     background-color: rgb(0, 0, 0);
 
@@ -22,6 +24,33 @@ header {
 
 .navbar-toggler {
     border: none !important;
+}
+
+/************************************* SCROLLBAR *******************************/
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #e7d266;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #e7e984;
+}
+
+article::-webkit-scrollbar {
+    width: 10px;
+}
+
+article::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #e7d266;
+}
+
+article::-webkit-scrollbar-thumb:hover {
+    background: #e7e984;
 }
 
 /*********************************** MENU ****************************************/
@@ -69,9 +98,18 @@ footer {
 }
 
 /***************************************** INICIO ******************************************/
-.logoprinc img {
+.logoprinc {
     height: 500px;
-    width: 700px;
+    width: 100%;
+
+    img {
+        height: 500px;
+        width: 700px;
+    }
+}
+
+#carouselExampleCaptions {
+    width: 100%;
 }
 
 /***************************************** Novedades ***************************************/
@@ -109,13 +147,14 @@ footer {
     }
 
     .suscribete {
+        margin-top: 20px;
         width: map-get($botonini, ancho);
         height: map-get($botonini, alto);
-        background-color:map-get($botonini, color1);
-        color:map-get($botonini, color2);
-        @include bordes( 15px, $color-dorado, 4px, solid);
-        font-size:map-get($botonini, font-size);
-        font-weight:map-get($botonini, font-weight);
+        background-color: map-get($botonini, color1);
+        color: map-get($botonini, color2);
+        @include bordes(15px, $color-dorado, 4px, solid);
+        font-size: map-get($botonini, font-size);
+        font-weight: map-get($botonini, font-weight);
     }
 }
 
@@ -221,7 +260,7 @@ footer {
         border-style: solid;
         border-width: 4px;
         border-color: $color-dorado;
-        @include bordes(0,$color-dorado,4px,solid);
+        @include bordes(0, $color-dorado, 4px, solid);
         border-top-left-radius: 15px;
         border-bottom-right-radius: 15px;
         height: 200px;
@@ -230,8 +269,9 @@ footer {
             img {
                 border-top-left-radius: 20px;
                 border-bottom-right-radius: 20px;
-                width: 100%;
-                height: 100%;
+                margin: 30px;
+                width: 80%;
+                height: 70%;
             }
         }
     }
@@ -250,23 +290,27 @@ footer {
         .datos2 {
             height: 300px;
             width: 100%;
+
             .foto {
                 height: 100%;
                 width: 25%;
                 margin: 1px;
-                    }   
-            article{
+            }
+
+            article {
                 margin: 5px;
                 height: 90%;
                 overflow-y: scroll;
-                        p{  
-                        
-                            font-size: x-small;
-                        }
-                    }
+
+                p {
+
+                    font-size: x-small;
                 }
             }
         }
+    }
+}
+
 .datos2 {
     margin: 30px;
     padding: 5px 5px;
@@ -275,6 +319,7 @@ footer {
     border-color: $color-dorado;
     border-top-left-radius: 15px;
     border-bottom-right-radius: 15px;
+
     .foto {
         border-style: solid;
         border-width: 1px;
@@ -285,6 +330,7 @@ footer {
         margin: 5px;
         width: 200px;
         height: 580px;
+
         img {
             width: 100%;
             height: 100%;
@@ -298,15 +344,19 @@ footer {
 
 
 /**********************/
-#freddie1, #roger1 ,#brian1, #john1 {
+#freddie1,
+#roger1,
+#brian1,
+#john1 {
     article {
-    margin: 10px;
+        margin: 10px;
 
-    text-align: center;
-    color: white;
-    overflow-y: scroll;
+        text-align: center;
+        color: white;
+        overflow-y: scroll;
+    }
 }
-}
+
 /******************************************
 
 /******************************************* PAGINA DE ALBUMES ******************************************/
@@ -316,17 +366,19 @@ footer {
     background-image: url(../public/images/7974.png);
     background-size: 100px 100px;
     background-repeat: repeat;
-    width: 1500px;
+    width: 100%;
     height: 300px;
-    overflow-y: scroll;
+    padding-left: 10%;
+
     div {
-        margin: 25px;
+        margin: 25px 150px;
         display: inline-block;
         width: 250px;
         height: 250px;
         border-style: solid;
         border-width: 6px;
         border-color: rgb(148, 150, 62);
+
         img {
             width: 250px;
             height: 250px;
@@ -343,7 +395,9 @@ hr {
 
 /*************************************************************************************************/
 
-#inuendo, #opera, #kind {
+#inuendo,
+#opera,
+#kind {
     position: relative;
     margin-top: 20px;
     margin-left: 200px;
@@ -352,6 +406,7 @@ hr {
     border-color: $dorado-albumes;
     width: 1000px;
     height: 600px;
+
     article {
         border: $dorado-albumes;
         border-style: solid;
@@ -362,21 +417,33 @@ hr {
         overflow-y: scroll;
         margin-top: 0px;
         margin-right: 15px;
+
+        p {
+            padding: 30px;
+        }
+
+        iframe {
+            margin: 5px 50px;
+        }
+
         h1 {
             font-size: 50px;
             color: $dorado-albumes;
             text-align: center;
         }
     }
+
     aside {
         width: 260px;
         height: 5px;
+
         img {
             width: 250px;
             height: 200px;
             display: block;
             margin: 10px;
         }
+
         iframe {
             width: 250px;
             margin: 10px;
@@ -390,11 +457,13 @@ hr {
 
 /* //////////////////////Pag Contacto ////////////////////////////// */
 
-.imgcontac {    
-    padding-top: 20% 0;
+.imgcontac {
+    align-items: center;
+
     img {
-        width: 250px;
-        height: 200px;
+
+        width: 350px;
+        height: 300px;
     }
 }
 
@@ -405,40 +474,47 @@ hr {
 
 
 .contactanos {
-    div{
+    div {
         margin: 5px;
-    textarea {
-        width: 290px;
-        text-align: center;
-        font-size: 20px;
-        font-weight: bold;
-        border-radius: 15px;
+
+        textarea {
+            width: 290px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 15px;
+        }
+
+        .botonform {
+            width: map-get($boton-c, width);
+            border-radius: map-get($boton-c, border-radius);
+            height: map-get($boton-c, height);
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: rgb(204, 212, 129);
+            margin-left: map-get($boton-c, margin-left);
+        }
+
+        input {
+            background-color:
+            width 250px;
+            height: 30px;
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 15px;
+
+
+        }
+
+        select {
+            width: 150px;
+            border-radius: 15px;
+            height: 30px;
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+        }
     }
-    input {
-    background-color: rgb(255, 255, 255);
-    width: 250px;
-    height: 30px;
-    text-align: center;
-    font-size: 15px;
-    font-weight: bold;
-    border-radius: 15px;
-    select {
-        width: 150px;
-        border-radius: 15px;
-        height: 30px;
-        text-align: center;
-        font-size: 15px;
-        font-weight: bold;
-        background-color: rgba(255, 255, 255);
-    }
-    
-}}}
-.botonform {
-    height: map-get($boton-c, height);
-    width: map-get($boton-c, width);
-    margin-left: map-get($boton-c, margin-left);
-    border-radius: map-get($boton-c, border-radius);
 }
-
-
-
